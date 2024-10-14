@@ -58,11 +58,11 @@
             {
                 return "Маленький стол";
             }
-            else if (a <= 4 || a >= 3)
+            else if (a <= 4 && a >= 3)
             {
                 return "Средний стол";
             }
-            else if (a <= 8 || a >= 5)
+            else if (a <= 8 && a >= 5)
             {
                 return "Большой стол";
             }
@@ -76,7 +76,7 @@
             {
                 return "Клиент получает скидку";
             }
-            else if (NumberOrders <= 4 || amountMoneySpent <= 5000)
+            else if (NumberOrders >= 4 && amountMoneySpent >= 5000)
             {
                 return "Клиент получает скидку";
             }
@@ -87,7 +87,7 @@
         //2*4
         public static string Dz2_4(double Length, double Width, double Height, double mass, double distance)
         {
-            if (Length + Width + Height <= 150 || Length < 100 || Width < 100 || Height < 100 || mass > 10 || distance >= 3 || distance <= 10)
+            if (Length + Width + Height <= 150 && Length < 100 && Width < 100 && Height < 100 && mass > 10 && distance >= 3 && distance <= 10)
             {
                 return "Отправление малогабаритное";
             }
@@ -143,7 +143,7 @@
             int result = 0;
             for (int i = 1; i == a; i++)
             {
-                if (i != a || a / 2 != 0)
+                if (i != a && a / 2 != 0)
                 {
                     result = i;
                 }
